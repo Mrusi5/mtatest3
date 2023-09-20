@@ -1,0 +1,7 @@
+<meta>
+     <info author="Mrusi" type="script" name="id_players" description="Id" />
+     <script src="Sid_issuance.lua" type="server"/>
+     <script src="Cdraw_id.lua" type="client"/>
+     <script src="SaTable.lua" type="server"/>
+     <export function="exportTable" type="server"/>
+</meta>

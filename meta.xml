@@ -1,0 +1,8 @@
+<meta>
+     <info author="Mrusi" type="script" name="factions" description="Factions" />
+     <script src="Screate_faction.lua" type="server"/>
+     <script src="Sfaction_chat.lua" type="server"/>
+     <script src="Smanage_faction.lua" type="server"/>
+     <script src="CUIMenu.lua" type="client"/>
+     <script src="SUIMenu.lua" type="server"/>
+</meta>

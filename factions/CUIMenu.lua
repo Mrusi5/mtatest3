@@ -72,8 +72,10 @@ addEventHandler( "receiveFactionForAccessLevel", root, function( accessLevel )
             guiSetVisible( invButton, false )
             guiSetVisible( fireButton, false )
             guiSetVisible( tabCity, false )
+            guiSetVisible( inviteEdit, false )
         elseif accessLevel == "leader" then
             accessLevelplayer = "leader"
+            guiSetVisible( inviteEdit, true )
             guiSetVisible( invButton, true )
             guiSetVisible( fireButton, true )
             guiSetVisible( tabCity, true )

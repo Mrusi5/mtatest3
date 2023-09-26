@@ -1,12 +1,14 @@
-
+local currentID = 1
 usedIDs = { }
 
 local function generateUniqueID( )
     local uniqueID
     repeat
-        uniqueID = math.random( 1000, 9999 )
+        uniqueID = currentID
+        currentID = currentID + 1
     until not usedIDs[ uniqueID ]
     usedIDs[ uniqueID ] = true
+    currentID = 1
     return uniqueID
 end
 
@@ -25,6 +27,6 @@ addEventHandler( "onPlayerQuit", root, function( )
     local playerID = getElementData( source, "playerID" )
     if playerID then
         usedIDs[ playerID ] = nil
+
     end
 end )
-
